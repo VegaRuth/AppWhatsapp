@@ -1,0 +1,220 @@
+/*Clases generales*/
+body{
+	background-color: gray;
+}
+.margin-top{
+	margin-top: 20px;
+}
+.margin-bottom{
+	margin-bottom: -12px;
+}
+.inline{
+	display: inline-block;
+}
+.float-right{
+	float: right;
+}
+a{
+	list-style-type: none;
+	text-decoration: none;
+}
+/*Panel*/
+	/*Panel heading*/
+.panel-h{
+	width: 369px;
+	height: 64px;
+}
+
+.panel-h-chat{
+height: 64px;
+}
+
+	/*Panel body*/
+.panel-b{
+	margin: 0;
+    margin-top: -37px;
+    margin-left: -15px;	
+    width: 401px;
+    overflow: auto;  /*-------------------SCROLL--------*/
+}
+	/*Paneles de chat*/
+#hora{
+	float: right;
+}
+.panel-chat{
+	width: 770px;
+    height: 851px;
+    display: inline-block;
+    float: right;
+    margin-top: -914px;
+   	background-image: url(../image/chat-panel-bg.png);
+   	float: right;
+
+}
+/*Panel del footer*/
+.panel-f{
+	margin-top: 111px;
+    height: 51px;
+    /* border-color: #ddd; */
+    border: 1px solid #ddd;
+}
+.circulo{
+	border-radius: 70px;
+	width: 50px;
+	height: 50px;
+	margin-right: 19px;
+}
+/*Forma de globo p/ mensaje de chat*/
+#globo{
+	     width: 177px;
+	    height: auto;
+	    padding: 7px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px #555;
+        background-color: #EEE;
+        position: relative;
+}
+#globo:before{
+    content: "";
+    width: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    border-color: transparent #ccc;
+    top: 20px;
+    left: -10px;
+}
+#globo.border{
+	position: inherit;
+}
+.block{
+	margin-left: 542px;
+}
+/*Mensajes del chat*/
+a.blue{
+	color: #2393EA;
+}
+a.pink{
+	color:#E51AB3;
+}
+.green{
+	color:#8CBB8A;
+}
+.yellow{
+	color: #FFD400;
+}
+.bg-green{
+	background-color: #20D1A0;	
+}
+.msj{
+     margin-left: 30px;
+    margin-top: 10px;
+}
+
+/*Backgrounds*/
+.bg-green{
+	width: 100%;
+	height: 100px;
+	background-color:rgba(0, 128, 93, 0.88);
+}
+.avatar{
+	background-image: url(../image/gian.jpg);
+	background-size: cover;
+	height: 44px;
+    width: 44px;
+	/*Background chat 1*/
+}
+.bk-1{
+	background-image: url(../image/logocodeacademy.png);
+	background-size: cover;
+}
+	/*Background chat 2*/
+.bk-2{
+	background-image: url(../image/raymi.jpg);
+	background-size: cover;
+}
+	/*Background chat 3*/
+.bk-3{
+	background-image: url(../image/mariana.jpg);
+	background-size: cover;
+}
+	/*Background chat 4*/
+.bk-4{
+	background-image: url(../image/anamaria.jpg);
+	background-size: cover;
+}
+	/*Background chat 5*/
+.bk-5{
+	background-image: url(../image/rodulfo.jpg);
+	background-size: cover;
+}
+	/*Background chat 6*/
+.bk-6{
+	background-image: url(../image/andrea.jpg);
+	background-size: cover;
+}
+	/*Background chat 7 */
+.bk-7{
+	background-image: url(../image/mariapaula.jpg);
+	background-size: cover;
+}
+	/*Background chat 8*/
+.bk-8{
+	background-image: url(../image/katy.jpg);
+	background-size: cover;
+}
+.bk-9{
+	background-image: url(../image/aldo.jpg);
+	background-size: cover;
+}
+/*Texto*/
+.font-smaller{
+	font-size: smaller;
+}
+.font-size-icon{
+	font-size: large;
+	color: #777;
+}
+.font-size{
+	font-size:13px; 
+}
+/*Iconos*/
+.icon-m{
+	margin-left: 213px;
+    margin-right: 27px;
+}
+.iconos{
+	margin-top: -32px;
+    margin-left: 45px;
+}
+.iconos-chat{
+	float: right;
+	margin-right: 10px;
+	padding-top: 10px;
+}
+.adjuntar{
+	margin-right: 20px;
+	padding-bottom: 26px;
+}
+.ico{
+	    padding-left: 97px;
+}
+
+.input{
+     width: 595px;
+    margin-left: 31px;
+    height: 33px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    margin-right: 22px;
+    border-radius: 6px;
+}
+.emoticon{
+	font-size: 23px;
+}
+.search{
+    width: 274px;
+    border-radius: 7px;
+    height: 28px;
+    margin-left: 45px;
+}
