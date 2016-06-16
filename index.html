@@ -29,7 +29,7 @@
 			<center>
 			<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11"><!--Contenido General-->
 				<div class="row">
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 brd-gray"  data-spy="scroll" id="contenedorContactos"><!--Contenedor Contactos-->
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 brd-gray scroll" id="contenedorContactos"><!--Contenedor Contactos-->
 						<div class="row brd-gray">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd-2 bg-gray"><!-- row Encabezado-->
 								<img class=" pull-left img-circle w-25" src="image/gian.jpg">
@@ -42,17 +42,25 @@
 								<input id="#inputContacto" type="text" placeholder= "Buscar o empezar un chat nuevo" class="w100 redondeo">
 							</div><!--buscadorContactos-->
 						</div>
-						<div class="row brd-gray">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd-2 info-Contacto">
-								<img src="img/." class="img-circle w25">
-								<p class="nombreContacto"><span class="hora"></span></p>
-								<small class="ultimo mensaje"><p></p></small>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pd-2 info-Contacto">
-								<img src="img/." class="img-circle w25">
-								<p class="nombreContacto"><span class="hora"></span></p>
-								<small class="ultimo mensaje"><p></p></small>
-							</div>
+						<div class="row brd-gray scroll pd-0 mg-0">
+							
+								<table id="listaContactos" class="w-100">
+									<tr class="contacto">
+										<td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+											<img class="img-circle img-responsive" src="image/logocodeacademy.png">
+										</td>
+										<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+											<h5 class="text-left">Laboratoria Perú</h5>
+											<h5 class="text-left"><small>Aldo: Dale, dale!</small></h5>
+										</td>
+										<td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+											<p class="txt-gray pt-5 text-right">14:25</p>
+										</td>
+									</tr>
+									
+										
+
+								
 						</div>
 					</div>
 					<div class="col-xs-8 col-sm-8  col-md-8 col-lg-8 brd-gray"><!--Contenedor Conversacion-->
@@ -73,8 +81,11 @@
 							</div>
 						</div>
 						<div class="row brd-gray">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-spy="scroll"  id="contenedorChat">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 scroll" id="contenedorChat">
 								<!--Aqui se pintan las conversaciones-->
+								<ul id="Conversacion">
+									
+								</ul>
 							</div>
 						</div>
 						<div class="row bg-gray pd-2 brd-gray"><!--interfaz enviar-->
@@ -82,10 +93,10 @@
 								<button><i class="icon-insert_emoticon emoticon"></i></button>
 							</div>
 							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-								<button><i class="icon-message emoticon"></i></button>
+								<button id="btnEnviar"><i class="icon-message emoticon"></i></button>
 							</div>
 							<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-								<input id="#inputTextMensaje" type="text" placeholder="Escribe un mensaje aquí" class="w100 redondeo">
+								<input id="inputTextMensaje" type="text" placeholder="Escribe un mensaje aquí" class="w100 redondeo">
 							</div>
 							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 								<button><i class="icon-mic emoticon"></i></button>

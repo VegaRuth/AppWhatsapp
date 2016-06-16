@@ -1,7 +1,5 @@
-
 /*GLOBAL*/
 a{
-	font-style: none;
 	list-style-type: none;
 	text-decoration: none;
 }
@@ -9,43 +7,43 @@ button{
 	background-color: transparent;
 	border: rgba(0,0,0, 0.4);
 }
-
-.block{
-	display: inline-block;
+li{
+	list-style: none;
 }
+
 /*Backgrounds*/
+body{
+	background-color: gray;
+}
 
 .header{
 	background-color: #106859;
 	height: 10em;
 	width:100%;
 }
+
 .contenedorContactos{
 position: relative;
-height: 400px;
+height: 10em;
 }
-#contenedorChat
-{
+
+#contenedorChat{
 	background-image: url("../image/chat-panel-bg.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 100%;
-	height: 400px;
+	height: 30em;
 	position: relative;
+	
 }
-
+.scroll{
+	overflow: auto;
+}
+/*Background*/
 .bg-gray{
 	background-color: #E1E5DA !important;
 }
-.bg-white{
-	background-color: white;
-}
-.bg-black{
-	background-color: black;
-}
-.bg-green{
-	background-color: #DCF6C4 ;
-}
+
 /*Border*/
 .brd-gray{
 	border: 1px gray solid;
@@ -97,6 +95,9 @@ height: 400px;
 	margin: 0%;
 }
 /*padding*/
+.pd-0{
+	padding: 0%;
+}
 .pt-2{
 	padding-top: 2%;
 	}
@@ -122,7 +123,25 @@ height: 400px;
 	padding-right: 20%;
 }
 
+/*Dinamico*/
+.burbuja{
+	width: 40%;
+	height: auto;
+	float: right;
+	margin: 2%;
+	padding: 2%;
+	text-align: left;
+	color: gray;
+	background-color: #D1F0B3;
+	box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.34);
 
+}
+.hora{
+	text-align: right;
+	font-weight: bold;
+	color: gray;
+	font-size: 10px;
+}
 
 
 
